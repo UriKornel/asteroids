@@ -26,10 +26,6 @@ def main():
 
     player = Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
 
-    # Ensure at least one shot exists without input
-    initial_shot = Shot(player.position[0], player.position[1])
-    initial_shot.velocity = pygame.Vector2(0, 1) * PLAYER_SHOOT_SPEED
-
     asteroid_field = AsteroidField()
 
     dt = 0
